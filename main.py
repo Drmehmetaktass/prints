@@ -30,11 +30,11 @@ if not os.path.exists('data.csv'):
 import logging
 from tglogging import TelegramLogHandler
 
-APP_ID = int(os.environ.get("APP_ID"))
+APP_ID = os.environ.get("APP_ID")
 API_HASH = os.environ.get("API_HASH")
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
-OWNER= int(os.environ.get("OWNER"))
+OWNER= os.environ.get("OWNER")
 PREMIUM = os.environ.get("PREMIUM")
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME")
 LOG_CHANNEL = os.environ.get("LOG_CHANNEL")
