@@ -524,7 +524,7 @@ async def button(app, update):
     try:
       query = await query_msg()
       a=0
-    
+      b=0
       number = await app.ask(chat_id=update.message.chat.id, text=f"**Now me message For Broadcast\n\nMade with ❤️ By @WNER_USERNAME}**")
       phone = number.text
       for row in query:
