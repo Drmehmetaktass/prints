@@ -447,7 +447,7 @@ async def subscribers_count(lel, message):
       but = InlineKeyboardMarkup([[InlineKeyboardButton("Users✅", callback_data="Users")], [InlineKeyboardButton("Broadcast💯", callback_data="Broadcast")],[InlineKeyboardButton("AddUser", callback_data="New")], [InlineKeyboardButton("Check Users", callback_data="Check")]])
       await app.send_message(chat_id=message.chat.id,text=f"**Hi** `{message.from_user.first_name}` **!\n\nWelcome to Admin Pannel of Induced Bot\n\nMade with ❤️ By @WNER_USERNAME**", reply_markup=but)
    else:
-      await app.send_message(chat_id=message.chat.id,text=f"**You are not owner of Bot \n\nMade with ❤️ By @{OWNER_USERNAME**")
+      await app.send_message(chat_id=message.chat.id,text=f"**You are not owner of Bot \n\nMade with ❤️ By @OWNER_USERNAME**")
 
 
 
@@ -463,7 +463,7 @@ async def button(app, update):
       await app.send_message(update.message.chat.id, f"""**Hesap istatistiklerini kontrol etmek için /phonesee'ye tıklamanız yeterli.\n\nMade with ❤️ By @ER_USERNAME**""") 
    elif "Remove" in k:
       await update.message.delete()
-      await app.send_message(update.message.chat.id, f"""**Numara kaldırmak için /remove tıklayınız.\n\nMade with ❤️ By @{OWNER_USERNAME**""") 
+      await app.send_message(update.message.chat.id, f"""**Numara kaldırmak için /remove tıklayınız.\n\nMade with ❤️ By @OWNER_USERNAME**""") 
    elif "Adding" in k:
       await update.message.delete()
       await app.send_message(update.message.chat.id, f"""**Üye ekleme işlemini başlatmak için /adding tıklayınız.\n\nMade with ❤️ By WNER_USERNAME**""") 
