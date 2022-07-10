@@ -365,7 +365,7 @@ async def to(lel, message):
                   traceback.print_exc()
                   status="Unexpected Error"
                   break
-               r+=f"{a-di+1}). **{x.first_name**   ⟾   **{status}**\n"
+               r+=f"{a-di+1}). **{x.first_name}**   ⟾   **{status}**\n"
                dad+=1
                a+=1
    except Exception as e:
