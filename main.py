@@ -446,7 +446,7 @@ async def subscribers_count(lel, message):
    if message.from_user.id in OWNER:
       but = InlineKeyboardMarkup([[InlineKeyboardButton("Users✅", callback_data="Users")], [InlineKeyboardButton("Broadcast💯", callback_data="Broadcast")],[InlineKeyboardButton("AddUser", callback_data="New")], [InlineKeyboardButton("Check Users", callback_data="Check")]])
       await app.send_message(chat_id=message.chat.id,text=f"**Hi** `{message.from_user.first_name}` **!\n\nWelcome to Admin Pannel of Induced Bot\n\nMade with ❤️ By @WNER_USERNAME}**", reply_markup=but)
-   else
+   else:
       await app.send_message(chat_id=message.chat.id,text=f"**You are not owner of Bot \n\nMade with ❤️ By @{OWNER_USERNAME}**")
 
 
