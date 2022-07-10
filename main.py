@@ -34,8 +34,8 @@ APP_ID = int(os.environ.get("APP_ID"))
 API_HASH = os.environ.get("API_HASH")
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
-OWNER= int(os.environ.get("OWNER"))
-PREMIUM = os.environ.get("PREMIUM")
+OWNER= [1610383727]
+PREMIUM = [1610383727]
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME")
 LOG_CHANNEL = os.environ.get("LOG_CHANNEL")
 
